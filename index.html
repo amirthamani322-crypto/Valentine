@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>For My Love ❤️</title>
+
+<style>
+body{
+background: linear-gradient(to right, #ff758c, #ff7eb3);
+text-align:center;
+font-family:Arial;
+color:white;
+padding:20px;
+}
+
+
+
+img{
+width:250px;
+border-radius:20px;
+margin:10px;
+}
+
+video{
+width:300px;
+border-radius:20px;
+margin-top:20px;
+}
+
+button{
+padding:12px 25px;
+border:none;
+border-radius:25px;
+background:white;
+color:#ff4b5c;
+font-size:18px;
+margin:10px;
+}
+
+.hidden{
+display:none;
+}
+
+input{
+padding:10px;
+border-radius:15px;
+border:none;
+text-align:center;
+}
+</style>
+</head>
+
+<body>
+
+<!-- PASSWORD SCREEN -->
+
+<div id="lock">
+<h2>Enter Secret Password 🔐</h2>
+<input type="password" id="pass" placeholder="Enter password">
+<br><br>
+<button onclick="check()">Unlock 💖</button>
+</div>
+
+<!-- MAIN CONTENT -->
+
+<div class="hidden" id="main">
+
+<h1>Happy Valentine's Day Gundus ❤️</h1>
+<p>each and every day is the valentines day for us gundupaya! skl la irukapo naraya cringe ah wish panipom but ipo evlo yosichalum varala da...anyway i wish even after 90-100 yrs we'll be same like this🐷🥹...love youhhh thangooo🐷🥹❤️</p>
+
+<h2>Our Memories 💕</h2>
+
+<img src="photo1.jpg">
+<img src="photo2.jpg">
+
+<h2>Our Video 🎥</h2>
+
+<video controls>
+<source src="video.mp4" type="video/mp4">
+</video>
+
+<h2>💍 Will You Be Mine Forever?</h2>
+
+<button onclick="sayYes()">Yes ❤️</button>
+<button onclick="sayNo()" id="noBtn">No 😜</button>
+
+<p id="result" style="font-size:22px; margin-top:20px;"></p>
+
+
+</div>
+
+<script>
+
+function check(){
+var password = document.getElementById("pass").value;
+
+if(password === "ourdate2020"){   // change password here
+document.getElementById("lock").style.display="none";
+document.getElementById("main").style.display="block";
+}
+else{
+alert("Wrong password 😝 Try again!");
+}
+}
+
+function sayYes(){
+document.getElementById("result").innerHTML =
+"Yayyy ❤️ Forever starts now 🥰💍";
+}
+
+function sayNo(){
+document.getElementById("result").innerHTML =
+" serupu pinjirum olunga yes ah presss panuuu ❤️";
+}
+
+
+
+</script>
+
+</body>
+</html>
+
